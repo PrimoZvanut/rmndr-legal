@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="sl">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rmndr – Politika zasebnosti / Privacy Policy</title>
+<title>Rmndr – Privacy Policy</title>
 <style>
   :root { --bg: #ffffff; --text: #1d1d1f; --muted: #5f6368; --line: #e3e3e3; --accent: #3b6fd4; }
   @media (prefers-color-scheme: dark) {
@@ -12,7 +12,7 @@
   body { margin: 0; background: var(--bg); color: var(--text);
          font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
-  nav { display: flex; gap: 16px; flex-wrap: wrap; font-size: 14px; margin-bottom: 8px; }
+  nav { font-size: 14px; margin-bottom: 8px; }
   a { color: var(--accent); }
   h1 { font-size: 26px; line-height: 1.25; margin: 24px 0 4px; }
   h2 { font-size: 19px; margin: 28px 0 8px; }
@@ -21,130 +21,18 @@
   th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
   th { color: var(--muted); font-weight: 600; }
   .table-wrap { overflow-x: auto; }
-  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
 </style>
 </head>
 <body>
 <main>
-<nav>
-  <a href="#sl">Slovenščina</a>
-  <a href="#en">English</a>
-  <a href="terms.html">Pogoji uporabe / Terms of Use</a>
-</nav>
+<nav><a href="terms.html">Terms of Use</a></nav>
 
-<!-- ═══════════════════════════ SLOVENŠČINA ═══════════════════════════ -->
-<section id="sl" lang="sl">
-<h1>Politika zasebnosti – Rmndr</h1>
-<p class="date">Velja od 6. oktobra 2026</p>
-
-<h2>1. Upravljavec</h2>
-<p>Za obdelavo osebnih podatkov v aplikaciji Rmndr (v nadaljevanju »aplikacija«) je odgovoren razvijalec
-Primož Žvanut, e-pošta: <a href="mailto:zvanut.primoz@gmail.com">zvanut.primoz@gmail.com</a>.</p>
-
-<h2>2. Na kratko</h2>
-<ul>
-  <li>Aplikacija nima uporabniških računov, oglasov in analitike.</li>
-  <li>Opomniki, shranjena mesta in nastavitve so shranjeni na tvojem telefonu.</li>
-  <li>Nekatere funkcije za delovanje pošljejo podatke Googlovim storitvam: zemljevid in iskanje krajev,
-      razumevanje opomnikov in govora (Gemini) ter preverjanje pristnosti aplikacije. Podrobnosti so v točki 5.</li>
-  <li>Podatkov ne prodajam in jih ne uporabljam za oglaševanje.</li>
-</ul>
-
-<h2>3. Podatki na tvojem telefonu</h2>
-<p>Na telefonu se hranijo:</p>
-<ul>
-  <li>opomniki (besedilo, čas, kraj, seznami, zapiski in priložene slike),</li>
-  <li>shranjena mesta (npr. »Doma«) z imenom in lokacijo,</li>
-  <li>osebni kontekst, ki ga vneseš sam, da aplikacija bolje razume tvoje opomnike,</li>
-  <li>nastavitve,</li>
-  <li>zgodovina opomnikov in diagnostični zapisi o lokaciji, ki se samodejno brišejo po 30 dneh,</li>
-  <li>dnevnik napak, če ga vklopiš v nastavitvah.</li>
-</ul>
-<p>Teh podatkov ne prejemam. Izbrišejo se, ko jih izbrišeš v aplikaciji ali ko aplikacijo odstraniš.</p>
-<p><strong>Varnostne kopije.</strong> Varnostno kopijo, ki jo ustvariš v aplikaciji, aplikacija shrani tja, kamor jo izbereš.
-Če imaš na telefonu vklopljeno Androidovo varnostno kopiranje, lahko Android podatke aplikacije shrani v tvoj Google račun;
-to ureja Google v skladu s tvojimi nastavitvami.</p>
-
-<h2>4. Lokacija in dejavnost</h2>
-<p>Aplikacija uporablja natančno lokacijo, tudi ko je zaprta (lokacija v ozadju), da te opomni, ko prispeš na kraj
-ali ga zapustiš. Lokacija se obdeluje na telefonu in je ne prejemam. Googlu se pošlje le kot središče iskanja, kadar
-aplikacija išče trgovine ali kraje za tvoj opomnik (točka 5).</p>
-<p>Za varčevanje z baterijo in za opomnike ob dejavnosti (npr. ko začneš hoditi ali voziti) aplikacija uporablja
-prepoznavo dejavnosti storitev Google Play, ki se izvaja na telefonu.</p>
-
-<h2>5. Storitve, ki jim aplikacija pošilja podatke</h2>
-<div class="table-wrap">
-<table>
-  <tr><th>Funkcija</th><th>Kaj se pošlje</th><th>Komu</th></tr>
-  <tr><td>Zemljevid, iskanje trgovin in krajev</td>
-      <td>iskalni niz (npr. »Spar«, »Koper«), koordinate središča iskanja (tvoja lokacija ali izbrani kraj), jezik</td>
-      <td>Google Maps Platform (Maps SDK, Places API, Geocoding API)</td></tr>
-  <tr><td>Razumevanje opomnikov (pametni in govorni vnos, iskanje)</td>
-      <td>besedilo ali prepis govora, datum, ura, jezik, imena in lokacije shranjenih mest, osebni kontekst</td>
-      <td>strežnik aplikacije (Google Cloud Functions, EU – Belgija) in model Gemini (Google)</td></tr>
-  <tr><td>Branje opomnikov na glas</td>
-      <td>besedilo, ki naj se prebere</td>
-      <td>strežnik aplikacije in Gemini (Google)</td></tr>
-  <tr><td>Prostoročni pogovor v živo</td>
-      <td>zvok iz mikrofona med pogovorom</td>
-      <td>Gemini Live (Google, prek Firebase)</td></tr>
-  <tr><td>Narek</td>
-      <td>zvok iz mikrofona</td>
-      <td>storitev za prepoznavo govora na tvojem telefonu (običajno Google)</td></tr>
-  <tr><td>Preverjanje pristnosti aplikacije</td>
-      <td>podatki o napravi in aplikaciji, ki jih zahteva Play Integrity</td>
-      <td>Firebase App Check (Google)</td></tr>
-  <tr><td>Naslovi povezav v opomnikih</td>
-      <td>spletni naslov povezave</td>
-      <td>spletna stran, na katero povezava kaže (za videe YouTube)</td></tr>
-  <tr><td>Koledar (če ga vklopiš)</td>
-      <td>dogodki iz izbranih koledarjev in opomniki, zapisani v koledar</td>
-      <td>koledar na tvojem telefonu; če je povezan z računom (npr. Google Koledar), ga sinhronizira ponudnik koledarja</td></tr>
-</table>
-</div>
-<p>Strežnik aplikacije vsebine ne shranjuje. Ob napaki se lahko del odgovora modela zapiše v sistemski dnevnik
-Google Cloud, kjer se hrani največ 30 dni. Po pogojih za Gemini API Google te vsebine ne uporablja za izboljševanje
-svojih izdelkov; hrani jo omejen čas izključno za odkrivanje in preprečevanje zlorab.</p>
-<p>Imen in naslovov trgovin, ki jih vrne Google, aplikacija ne shranjuje. Koordinate trgovin se najpozneje po 30 dneh
-osvežijo ali izbrišejo.</p>
-<p>Za obdelavo pri Googlu velja tudi <a href="https://policies.google.com/privacy">Googlov pravilnik o zasebnosti</a>.</p>
-
-<h2>6. Pravne podlage</h2>
-<ul>
-  <li><strong>Izvajanje storitve</strong>, ki jo uporabljaš (člen 6(1)(b) GDPR): opomniki, iskanje krajev, razumevanje vnosa.</li>
-  <li><strong>Tvoja privolitev</strong> (člen 6(1)(a) GDPR): dovoljenja za lokacijo, mikrofon, koledar in prepoznavo dejavnosti.
-      Kadar koli jih prekličeš v nastavitvah Androida.</li>
-  <li><strong>Zakoniti interes</strong> (člen 6(1)(f) GDPR): zaščita pred zlorabo (App Check) in odpravljanje napak.</li>
-</ul>
-
-<h2>7. Prenos izven EGP</h2>
-<p>Google lahko podatke obdeluje tudi zunaj Evropskega gospodarskega prostora. Prenos poteka na podlagi standardnih
-pogodbenih klavzul Evropske komisije oziroma okvira EU-ZDA za zasebnost podatkov.</p>
-
-<h2>8. Tvoje pravice</h2>
-<p>Imaš pravico do dostopa, popravka, izbrisa, omejitve obdelave, ugovora in prenosljivosti podatkov ter pravico,
-da privolitev kadar koli prekličeš. Ker so podatki na tvojem telefonu, jih večino urejaš sam v aplikaciji.
-Za vprašanja piši na <a href="mailto:zvanut.primoz@gmail.com">zvanut.primoz@gmail.com</a>.</p>
-<p>Pritožbo lahko vložiš pri Informacijskem pooblaščencu Republike Slovenije, Dunajska cesta 22, 1000 Ljubljana,
-<a href="https://www.ip-rs.si">www.ip-rs.si</a>.</p>
-
-<h2>9. Otroci</h2>
-<p>Aplikacija ni namenjena otrokom, mlajšim od 15 let.</p>
-
-<h2>10. Spremembe</h2>
-<p>Ob spremembah posodobim to stran in datum na vrhu.</p>
-</section>
-
-<hr>
-
-<!-- ═══════════════════════════ ENGLISH ═══════════════════════════ -->
-<section id="en" lang="en">
 <h1>Privacy Policy – Rmndr</h1>
-<p class="date">Effective 6 October 2026</p>
+<p class="date">Effective October 6, 2026</p>
 
-<h2>1. Controller</h2>
-<p>The developer Primož Žvanut is responsible for processing personal data in the Rmndr app (the "app"),
-email: <a href="mailto:zvanut.primoz@gmail.com">zvanut.primoz@gmail.com</a>.</p>
+<h2>1. Who is responsible</h2>
+<p>The Rmndr app (the "app") is developed by Primož Žvanut, who is responsible for processing personal data in the app.
+Contact: <a href="mailto:zvanut.primoz@gmail.com">zvanut.primoz@gmail.com</a>.</p>
 
 <h2>2. Summary</h2>
 <ul>
@@ -152,7 +40,7 @@ email: <a href="mailto:zvanut.primoz@gmail.com">zvanut.primoz@gmail.com</a>.</p>
   <li>Your reminders, saved places and settings are stored on your phone.</li>
   <li>Some features send data to Google services to work: the map and place search, understanding reminders and
       speech (Gemini), and verifying the app's authenticity. Details are in section 5.</li>
-  <li>I do not sell your data or use it for advertising.</li>
+  <li>I do not sell your personal data or share it for advertising.</li>
 </ul>
 
 <h2>3. Data on your phone</h2>
@@ -171,8 +59,8 @@ on your phone, Android may store the app's data in your Google account; this is 
 
 <h2>4. Location and activity</h2>
 <p>The app uses precise location, including when it is closed (background location), to remind you when you arrive at
-or leave a place. Location is processed on your phone and I do not receive it. It is sent to Google only as the centre of
-a search when the app looks up shops or places for your reminder (section 5).</p>
+or leave a place. Location is processed on your phone and I do not receive it. It is sent to Google only as the center of
+a search when the app looks up stores or places for your reminder (section 5).</p>
 <p>To save battery and for activity reminders (e.g. when you start walking or driving), the app uses Google Play
 services activity recognition, which runs on your phone.</p>
 
@@ -180,8 +68,8 @@ services activity recognition, which runs on your phone.</p>
 <div class="table-wrap">
 <table>
   <tr><th>Feature</th><th>What is sent</th><th>To whom</th></tr>
-  <tr><td>Map, shop and place search</td>
-      <td>search text (e.g. "Spar", "Koper"), coordinates of the search centre (your location or a chosen place), language</td>
+  <tr><td>Map, store and place search</td>
+      <td>search text (e.g. "Walmart", "Boston"), coordinates of the search center (your location or a chosen place), language</td>
       <td>Google Maps Platform (Maps SDK, Places API, Geocoding API)</td></tr>
   <tr><td>Understanding reminders (smart and voice input, search)</td>
       <td>text or speech transcript, date, time, language, names and locations of saved places, personal context</td>
@@ -209,35 +97,39 @@ services activity recognition, which runs on your phone.</p>
 <p>The app's server does not store content. If an error occurs, part of the model's response may be written to the
 Google Cloud system log, where it is kept for up to 30 days. Under the Gemini API terms, Google does not use this content
 to improve its products; it keeps it for a limited time solely to detect and prevent abuse.</p>
-<p>The app does not store the names and addresses of shops returned by Google. Shop coordinates are refreshed or deleted
+<p>The app does not store the names and addresses of stores returned by Google. Store coordinates are refreshed or deleted
 after 30 days at the latest.</p>
 <p>Google's processing is also governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-<h2>6. Legal bases</h2>
-<ul>
-  <li><strong>Providing the service</strong> you use (Art. 6(1)(b) GDPR): reminders, place search, understanding your input.</li>
-  <li><strong>Your consent</strong> (Art. 6(1)(a) GDPR): permissions for location, microphone, calendar and activity recognition.
-      You can withdraw them at any time in Android settings.</li>
-  <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR): protection against abuse (App Check) and fixing errors.</li>
-</ul>
+<h2>6. Tracking</h2>
+<p>The app does not track you across other apps or websites. Because there is no such tracking, it does not respond to
+"Do Not Track" signals.</p>
 
-<h2>7. Transfers outside the EEA</h2>
-<p>Google may process data outside the European Economic Area. Such transfers rely on the European Commission's
-standard contractual clauses or the EU-U.S. Data Privacy Framework.</p>
+<h2>7. Children</h2>
+<p>The app is not intended for children under 13. In the European Union, it is not intended for children below the age
+at which they can consent to online services in their country. I do not knowingly collect data from children.</p>
 
 <h2>8. Your rights</h2>
-<p>You have the right to access, rectify, erase, restrict processing of, object to processing of and port your data,
-and to withdraw consent at any time. Since your data is on your phone, you manage most of it yourself in the app.
-For questions, write to <a href="mailto:zvanut.primoz@gmail.com">zvanut.primoz@gmail.com</a>.</p>
-<p>You can lodge a complaint with the Information Commissioner of the Republic of Slovenia, Dunajska cesta 22,
-1000 Ljubljana, <a href="https://www.ip-rs.si">www.ip-rs.si</a>, or with the supervisory authority in your country.</p>
+<p>Since your data is on your phone, you can view, change and delete most of it yourself in the app or by uninstalling it.
+Wherever you live, you can contact me at <a href="mailto:zvanut.primoz@gmail.com">zvanut.primoz@gmail.com</a> with any
+question or request about your data.</p>
+<p><strong>European Economic Area and United Kingdom.</strong> You have the right to access, rectify, erase, restrict
+processing of, object to processing of and port your data, and to withdraw consent at any time. The legal bases are:</p>
+<ul>
+  <li><strong>providing the service</strong> you use (Art. 6(1)(b) GDPR): reminders, place search, understanding your input;</li>
+  <li><strong>your consent</strong> (Art. 6(1)(a) GDPR): permissions for location, microphone, calendar and activity recognition,
+      which you can withdraw at any time in Android settings;</li>
+  <li><strong>legitimate interest</strong> (Art. 6(1)(f) GDPR): protection against abuse (App Check) and fixing errors.</li>
+</ul>
+<p>You can lodge a complaint with the supervisory authority in your country or with the Information Commissioner of the
+Republic of Slovenia, Dunajska cesta 22, 1000 Ljubljana, Slovenia, <a href="https://www.ip-rs.si">www.ip-rs.si</a>.</p>
 
-<h2>9. Children</h2>
-<p>The app is not intended for children under 15.</p>
+<h2>9. International transfers</h2>
+<p>Google may process data in the United States and other countries. For data from the European Economic Area, such
+transfers rely on the European Commission's standard contractual clauses or the EU-U.S. Data Privacy Framework.</p>
 
 <h2>10. Changes</h2>
 <p>When this policy changes, I update this page and the date at the top.</p>
-</section>
 </main>
 </body>
 </html>
